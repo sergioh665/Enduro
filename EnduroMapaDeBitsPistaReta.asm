@@ -107,7 +107,7 @@ main:
 	addi $10, $0, 100 
 	addi $12, $0, 10
 	jal npc2	
-	
+      	
 fim:
 	addi $2, $0, 10
 	syscall
@@ -117,7 +117,7 @@ carro:
 	beq $12, $0, pulalinhacarro
 	lw $11, 0($15)
 	beq $11, 0x00004200, proxcarro
-	sw $11, 26348($8)		#POSIÇÃO NA TELA
+	sw $11, 27372($8)		#POSIÇÃO NA TELA
 	addi $8, $8, 4
 	addi $24, $24, 4
 	addi $15, $15, 4
